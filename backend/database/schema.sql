@@ -1,5 +1,6 @@
 -- =========================================================
 -- AgriSmart AI - MySQL Database Schema
+-- Converted from the original MongoDB/Mongoose models
 -- =========================================================
 
 CREATE DATABASE IF NOT EXISTS agrismart
@@ -10,6 +11,9 @@ USE agrismart;
 
 -- ---------------------------------------------------------
 -- users
+-- The original project had two Mongoose models (User and
+-- login_user) that both mapped to the same "users" Mongo
+-- collection. This single table replaces both.
 -- ---------------------------------------------------------
 CREATE TABLE IF NOT EXISTS users (
   id            INT AUTO_INCREMENT PRIMARY KEY,

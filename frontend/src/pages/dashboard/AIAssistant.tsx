@@ -284,9 +284,9 @@ Stay professional, concise, and helpful. Use simple, farmer-friendly language. P
   };
 
   return (
-    <div className="flex flex-col h-screen bg-green-50">
+    <div className="flex flex-col h-full bg-green-50">
       {/* Header */}
-      <header className="bg-green-500 text-white px-5 py-4 flex justify-between items-center shadow-md">
+      <header className="bg-gradient-to-r from-green-500 to-green-600 text-white px-5 py-4 flex justify-between items-center shadow-md">
         <div className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"

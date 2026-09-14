@@ -249,7 +249,7 @@ Treatments:
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-agri-50 to-agri-100/40">
       <div className="max-w-5xl mx-auto p-6">
         {/* Header */}
         <div className="text-center py-8">

@@ -73,7 +73,7 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen bg-agri-50/60">
       {/* Sidebar */}
       <aside
         className={`bg-gradient-to-b from-agri-50 to-agri-100 border-r border-agri-200 transition-all duration-300 ${
@@ -154,7 +154,7 @@ export default function Dashboard() {
       {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Top Navigation */}
-        <header className="bg-white border-b border-gray-200 shadow-sm">
+        <header className="bg-white/90 backdrop-blur border-b border-agri-100 shadow-sm">
           <div className="flex justify-between items-center p-4">
             {/* Mobile Menu Button */}
             <button
@@ -301,7 +301,7 @@ export default function Dashboard() {
         )}
 
         {/* Main Content Area with Outlet for nested routes */}
-        <main className="flex-1 overflow-y-auto bg-gradient-to-br from-gray-50 to-green-50">
+        <main className="flex-1 overflow-y-auto bg-gradient-to-br from-agri-50/50 to-green-50">
           <Outlet />
         </main>
       </div>

@@ -154,6 +154,7 @@ export default function CropPrediction() {
   };
   
   return (
+    <div className="min-h-screen bg-gradient-to-b from-agri-50 to-agri-100/40 p-6 md:p-8">
     <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden max-w-6xl mx-auto">
       {/* Left Section */}
       <div className="w-full md:w-2/5 bg-green-800 p-8 text-white">
@@ -409,6 +410,7 @@ export default function CropPrediction() {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 }

@@ -3,7 +3,11 @@
 # 🌾 AgriSmart.Ai – Revolutionizing Agriculture with AI
 
 > **Empowering Farmers with AI-Driven Insights for Sustainable Farming**  
+> *Developed with passion for the Hack4Bengal Virtual Hacks.*
+
 ![image](agrismarthomepage.png)
+
+
 ## 🚀 Overview
 
 **AgriSmart.Ai** is an intelligent agricultural assistant designed to empower farmers and agricultural enthusiasts with data-driven insights. By leveraging AI-powered analytics and real-time data, it enhances agricultural productivity and efficiency.
@@ -45,6 +49,9 @@
 *Evaluates key soil parameters like pH, NPK levels, and moisture to recommend the most suitable crops tailored to local conditions.*
 
 
+
+
+
 ### 🗣️ Multilingual Chatbot for Farmers
 
 ![Multilingual Chatbot for Farmers](chatbot.png)
@@ -81,7 +88,7 @@
 
 - `Python`,`Nodejs`,`Expressjs`
 - `Flask` for API development
-- `Mysql` for database interactions
+- `Mongodb` for database interactions
 
 ### 🤖 Machine Learning & AI
 
@@ -142,7 +149,7 @@ Database (SQLAlchemy)
 
 ## 🔗 Useful Links
 
-- 🧠 **GitHub Repository:** [AgriSmart.Ai](https://github.com/vishwam-doshi/SIH-TEAM-INNOVATRIX)
+- 🧠 **GitHub Repository:** [AgriSmart.Ai](https://github.com/Srinjoy2004/Hack4Bengal-VirtualHacks---AgriSmart.Ai)
 - 📄 **Project Documentation:** [AgriSmart.Ai Docs](#) *(Link to be provided)*
 
 ---
@@ -158,9 +165,15 @@ Database (SQLAlchemy)
 
 ## 🤝 Team
 
-**Team Name:** INNOVATRIX  
-👨‍💻 **Team Lead:**DOSHI VISHWAM VIRALKUMAR
-**Team Members :**DHARAMARAJ R. TRIVEDI| SHAH TILAK JAYDEEPKUMAR | TIWARI AKASH SUNIL| PANDYA VED SHAILESHBHAI | PATHAN NAHIDKHAN SAHIDKHAN 
+**Team Name:** AgriSmart.Ai  
+👨‍💻 **Team Lead:** Srinjoy Pramanik
+**Team Members :** Arpan Chowdhury I Syed Md.Musharraf I Subhabilas
+
+🏫 **Hackathon:** Hack4Bengal Virtual Hacks
+
+---
+
+Feel free to customize this `README.md` further to align with your project's specifics. If you have images or diagrams of your machine learning models, you can include them in the respective sections using markdown syntax:
 
 ### 🖼️ our model architecture
 ![Model Architecture](model_architecture.jpeg)

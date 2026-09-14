@@ -163,7 +163,7 @@ export default function CropProductionPrediction() {
   );
   
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-agri-50 to-agri-100/40">
       <div className="max-w-6xl mx-auto p-6">
         <div className="flex items-center space-x-3 mb-2">
           <div className="text-green-600">
@@ -396,8 +396,8 @@ export default function CropProductionPrediction() {
                       <div className="space-y-4">
                         {typeof predictionData.environmental_factors.rainfall === 'number' && (
                           <div className="flex items-center p-3 border border-gray-200 rounded-lg">
-                            <div className="bg-blue-100 p-2 rounded-full mr-3">
-                              <span className="text-blue-600">
+                            <div className="bg-agri-100 p-2 rounded-full mr-3">
+                              <span className="text-agri-600">
                                 <DropletsIcon />
                               </span>
                             </div>
@@ -407,16 +407,16 @@ export default function CropProductionPrediction() {
                                 {predictionData.environmental_factors.rainfall.toFixed(1)} mm per month
                               </p>
                             </div>
-                            <div className="bg-blue-50 px-3 py-1 rounded-full">
-                              <span className="text-blue-800 font-medium">Adequate</span>
+                            <div className="bg-agri-50 px-3 py-1 rounded-full">
+                              <span className="text-agri-800 font-medium">Adequate</span>
                             </div>
                           </div>
                         )}
                         
                         {predictionData.environmental_factors.temperature_range && (
                           <div className="flex items-center p-3 border border-gray-200 rounded-lg">
-                            <div className="bg-orange-100 p-2 rounded-full mr-3">
-                              <span className="text-orange-600">
+                            <div className="bg-agri-200 p-2 rounded-full mr-3">
+                              <span className="text-agri-700">
                                 <ThermometerIcon />
                               </span>
                             </div>
