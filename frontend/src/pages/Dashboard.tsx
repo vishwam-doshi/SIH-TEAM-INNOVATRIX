@@ -1,9 +1,10 @@
-import { useState, useEffect, useRef } from "react";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, Outlet } from "react-router-dom";
 import { 
   LayoutDashboard, 
   Leaf, 
   CloudSun, 
+  MessageSquare, 
   BarChart2, 
   Settings,
   Bell,
@@ -23,25 +24,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-// Everything the search bar can find, in one place.
-const SEARCHABLE_ITEMS = [
-  { label: "Overview", to: "/dashboard", keywords: "dashboard home overview" },
-  { label: "Disease Prediction", to: "/dashboard/DiseasePrediction", keywords: "disease prediction crop health leaf" },
-  { label: "Crop Prediction", to: "/dashboard/CropPrediction", keywords: "crop prediction soil recommend" },
-  { label: "Crop Production Prediction", to: "/dashboard/CropProductionPrediction", keywords: "crop production prediction yield" },
-  { label: "Weather Forecast", to: "/dashboard/Weather", keywords: "weather forecast rain temperature climate" },
-  { label: "My Profile", to: "/dashboard/profile", keywords: "profile account name email avatar" },
-  { label: "Settings", to: "/dashboard/settings", keywords: "settings preferences theme dark mode notifications" },
-];
-
 export default function Dashboard() {
-  const navigate = useNavigate();
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [user, setUser] = useState({ name: "User", email: "user@example.com" });
-  const [searchQuery, setSearchQuery] = useState("");
-  const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const searchRef = useRef<HTMLDivElement>(null);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -50,36 +36,6 @@ export default function Dashboard() {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
-  const searchResults = searchQuery.trim()
-    ? SEARCHABLE_ITEMS.filter((item) =>
-        `${item.label} ${item.keywords}`.toLowerCase().includes(searchQuery.trim().toLowerCase())
-      )
-    : [];
-
-  const goToResult = (to: string) => {
-    navigate(to);
-    setSearchQuery("");
-    setIsSearchFocused(false);
-  };
-
-  const handleSearchSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (searchResults.length > 0) {
-      goToResult(searchResults[0].to);
-    }
-  };
-
-  // Close the results dropdown when clicking outside the search box
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
-        setIsSearchFocused(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -167,6 +123,13 @@ export default function Dashboard() {
               {isSidebarOpen && <span>Weather Forecast</span>}
             </Link>
             <Link
+              to="/dashboard/AIAssistant"
+              className="flex items-center gap-3 p-3 text-gray-700 hover:bg-agri-50 hover:text-agri-600 rounded-lg font-medium"
+            >
+              <MessageSquare className="h-5 w-5 text-agri-500" />
+              {isSidebarOpen && <span>AI Assistant</span>}
+            </Link>
+            <Link
               to="/dashboard/CropProductionPrediction"
               className="flex items-center gap-3 p-3 text-gray-700 hover:bg-agri-50 hover:text-agri-600 rounded-lg font-medium"
             >
@@ -209,40 +172,15 @@ export default function Dashboard() {
 
             {/* Search (Desktop) */}
             <div className="hidden md:flex items-center flex-1 mx-4 lg:mx-16">
-              <div className="relative w-full max-w-md" ref={searchRef}>
-                <form onSubmit={handleSearchSubmit}>
-                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <Search className="h-5 w-5 text-gray-400" />
-                  </div>
-                  <input
-                    type="text"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    onFocus={() => setIsSearchFocused(true)}
-                    placeholder="Search tools, pages..."
-                    className="form-input w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-agri-500 focus:border-transparent"
-                  />
-                </form>
-
-                {isSearchFocused && searchQuery.trim() && (
-                  <div className="absolute z-50 mt-1 w-full bg-white border border-agri-100 rounded-lg shadow-lg overflow-hidden">
-                    {searchResults.length > 0 ? (
-                      searchResults.map((item) => (
-                        <button
-                          key={item.to}
-                          onClick={() => goToResult(item.to)}
-                          className="w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-agri-50 hover:text-agri-700 transition-colors"
-                        >
-                          {item.label}
-                        </button>
-                      ))
-                    ) : (
-                      <p className="px-4 py-2.5 text-sm text-gray-500">
-                        No results for "{searchQuery}"
-                      </p>
-                    )}
-                  </div>
-                )}
+              <div className="relative w-full max-w-md">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <Search className="h-5 w-5 text-gray-400" />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="form-input w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-agri-500 focus:border-transparent"
+                />
               </div>
             </div>
 
@@ -270,11 +208,11 @@ export default function Dashboard() {
                     <p className="text-xs text-gray-500">{user.email}</p>
                   </div>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem className="cursor-pointer" asChild>
-                    <Link to="/dashboard/profile">Profile</Link>
+                  <DropdownMenuItem className="cursor-pointer">
+                    Profile
                   </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer" asChild>
-                    <Link to="/dashboard/settings">Account Settings</Link>
+                  <DropdownMenuItem className="cursor-pointer">
+                    Account Settings
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem className="cursor-pointer text-red-500 flex items-center gap-2" asChild>
@@ -328,20 +266,20 @@ export default function Dashboard() {
                   <span>Weather Forecast</span>
                 </Link>
                 <Link
+                  to="/dashboard/chatbot"
+                  className="flex items-center gap-3 p-3 text-gray-700 hover:bg-agri-50 hover:text-agri-600 rounded-lg font-medium"
+                  onClick={toggleMobileMenu}
+                >
+                  <MessageSquare className="h-5 w-5 text-agri-500" />
+                  <span>AI Assistant</span>
+                </Link>
+                <Link
                   to="/dashboard/disease-prediction"
                   className="flex items-center gap-3 p-3 text-gray-700 hover:bg-agri-50 hover:text-agri-600 rounded-lg font-medium"
                   onClick={toggleMobileMenu}
                 >
                   <BarChart2 className="h-5 w-5 text-agri-500" />
                   <span>Disease Prediction</span>
-                </Link>
-                <Link
-                  to="/dashboard/profile"
-                  className="flex items-center gap-3 p-3 text-gray-700 hover:bg-agri-50 hover:text-agri-600 rounded-lg font-medium"
-                  onClick={toggleMobileMenu}
-                >
-                  <User className="h-5 w-5 text-agri-500" />
-                  <span>Profile</span>
                 </Link>
                 <Link
                   to="/dashboard/settings"

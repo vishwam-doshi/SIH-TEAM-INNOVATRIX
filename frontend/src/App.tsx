@@ -12,9 +12,8 @@ import Weather from "./pages/dashboard/Weather";
 import CropPrediction from "./pages/dashboard/CropPrediction";
 import DiseasePrediction from "./pages/dashboard/DiseasePrediction";
 import CropProductionPrediction from "./pages/dashboard/CropProductionPrediction";
+import AIAssistant from "./pages/dashboard/AIAssistant";
 import Overview from "./pages/dashboard/Overview";
-import Profile from "./pages/dashboard/Profile";
-import Settings from "./pages/dashboard/Settings";
 
 const queryClient = new QueryClient();
 
@@ -33,9 +32,8 @@ const App = () => (
           <Route path="CropPrediction" element={<CropPrediction />} />
           <Route path="DiseasePrediction" element={<DiseasePrediction />} />
           <Route path="CropProductionprediction" element={<CropProductionPrediction />} />
+          <Route path="AIAssistant" element={<AIAssistant />} />
           <Route path="Weather" element={<Weather />} />
-          <Route path="profile" element={<Profile />} />
-          <Route path="settings" element={<Settings />} />
           </Route>
           {/* Any feature/marketing link that doesn't have its own page yet
               (e.g. /features, /about, /contact, /features/soil-analysis...)

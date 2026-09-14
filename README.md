@@ -1,12 +1,6 @@
-
-
-# 🌾 AgriSmart.Ai – Revolutionizing Agriculture with AI
-
-> **Empowering Farmers with AI-Driven Insights for Sustainable Farming**  
-> *Developed with passion for the Hack4Bengal Virtual Hacks.*
-
+🌾 AgriSmart.Ai – Revolutionizing Agriculture with AI
+Empowering Farmers with AI-Driven Insights for Sustainable Farming
 ![image](agrismarthomepage.png)
-
 
 ## 🚀 Overview
 
@@ -20,19 +14,16 @@
 > 🌾 Traditional farming methods may not be sufficient to meet the demands of modern agriculture.  
 > 📉 There's a need for a centralized platform that offers data-driven solutions to common agricultural challenges.
 
----
 
-## ✨ Key Features
-
-| 👨‍🌾 For Farmers | 🧑‍💻 For Researchers |
-|-----------------|---------------------|
+✨ Key Features
+|            👨‍🌾 For Farmers                        | 🧑‍💻 For Researchers                             |
+|--------------------------------------------------|--------------------------|
 | 📸 **Crop Disease Detection via Image Analysis** | 📊 **Access to Agricultural Data for Research** |
 | 🌦️ **Weather Forecasting for Optimal Farming** | 🧪 **Experimentation with ML Models** |
 | 🧪 **Soil Health Monitoring** | 🔍 **Analysis of Crop Patterns** |
 | 📈 **Yield Prediction and Recommendations** | 📚 **Contribution to Open-Source Agricultural Tools** |
-| | 🧪 **Develop and Test ML Models for Agriculture** |
+| 🗣️ **Multilingual Chatbot for Farming Queries** | 🧪 **Develop and Test ML Models for Agriculture** |
 
----
 
 ## 📸 Feature Demonstrations
 
@@ -51,6 +42,12 @@
 
 
 
+
+### 🗣️ Multilingual Chatbot for Farmers
+
+![Multilingual Chatbot for Farmers](chatbot.png)
+
+*Answers farmers’ questions related to farming, including crops, weather, and pests, in multiple regional languages to ensure better accessibility and support.*
 
 ---
 
@@ -159,17 +156,9 @@ Database (SQLAlchemy)
 
 ## 🤝 Team
 
-**Team Name:** AgriSmart.Ai  
-👨‍💻 **Team Lead:** Srinjoy Pramanik
-**Team Members :** Arpan Chowdhury I Syed Md.Musharraf I Subhabilas
-
-🏫 **Hackathon:** Hack4Bengal Virtual Hacks
-
----
-
-Feel free to customize this `README.md` further to align with your project's specifics. If you have images or diagrams of your machine learning models, you can include them in the respective sections using markdown syntax:
+**Team Name:**INNOVATRIX
+👨‍💻 **Team Lead:** DOSHI VISHWAM VIRALKUMAR 
+**Team Members :** DHARMARAJ R TRIVEDI |SHAH TILAK JAYDEEPKUMAR | TIWARI AKASH SUNIL | PANDYA VED SHAILESHBHAI | PATHAN NAHIDKHAN SAHIDKHAN
 
 ### 🖼️ our model architecture
 ![Model Architecture](model_architecture.jpeg)
-
-

@@ -35,6 +35,14 @@ const testimonials = [
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop",
     rating: 5,
     text: "The crop production predictions helped me plan my harvest and storage well in advance, cutting down a lot of guesswork every season."
+  },
+  {
+    id: 5,
+    name: "Mohammad Farooq",
+    location: "Maharashtra",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
+    rating: 5,
+    text: "The AI chatbot answers my questions at any time of day, which is perfect for busy farmers like me. It's like having an agriculture expert in my pocket 24/7."
   }
 ];
 

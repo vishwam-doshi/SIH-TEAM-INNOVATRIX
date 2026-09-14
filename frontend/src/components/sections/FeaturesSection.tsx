@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Leaf, CloudSun, Timer, BarChart2 } from "lucide-react";
+import { Leaf, CloudSun, MessageSquare, Timer, BarChart2 } from "lucide-react";
 
 const features = [
   {
@@ -16,6 +16,13 @@ const features = [
     description:
       "Get accurate weather forecasts and real-time soil condition data to make informed decisions for your farming activities.",
     link: "/features/weather"
+  },
+  {
+    icon: <MessageSquare className="h-10 w-10 text-agri-500" />,
+    title: "AI-Powered Agricultural Assistant",
+    description:
+      "Access our intelligent chatbot for instant guidance on farming techniques, crop diseases, and best practices.",
+    link: "/features/chatbot"
   },
   {
     icon: <Timer className="h-10 w-10 text-agri-500" />,

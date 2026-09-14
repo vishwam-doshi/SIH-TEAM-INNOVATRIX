@@ -84,6 +84,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/features/chatbot" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all inline-block">
+                  AI Chatbot Assistant
+                </Link>
+              </li>
+              <li>
                 <Link to="/features/weather" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all inline-block">
                   Weather Forecasting
                 </Link>

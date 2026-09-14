@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Leaf, CloudSun, BarChart2, ArrowRight } from "lucide-react";
+import { Leaf, CloudSun, MessageSquare, BarChart2, ArrowRight } from "lucide-react";
 
 const features = [
   {
@@ -19,6 +19,12 @@ const features = [
     icon: CloudSun,
     title: "Weather Forecast",
     desc: "Check local weather to plan your farming activities.",
+  },
+  {
+    to: "/dashboard/AIAssistant",
+    icon: MessageSquare,
+    title: "AI Assistant",
+    desc: "Ask farming questions and get instant AI-powered answers.",
   },
   {
     to: "/dashboard/CropProductionPrediction",
