@@ -158,9 +158,9 @@ Database (SQLAlchemy)
 
 ## 🤝 Team
 
-**Team Name:** AgriSmart.Ai  
-👨‍💻 **Team Lead:**Doshi Vishwam
-**Team Members :** Dharamraaj | SHAH TILAK JAYDEEPKUMAR | TIWARI AKASH SUNIL| PANDYA VED SHAILESHBHAI | PATHAN NAHIDKHAN SAHIDKHAN 
+**Team Name:** INNOVATRIX  
+👨‍💻 **Team Lead:**DOSHI VISHWAM VIRALKUMAR
+**Team Members :**DHARAMARAJ R. TRIVEDI| SHAH TILAK JAYDEEPKUMAR | TIWARI AKASH SUNIL| PANDYA VED SHAILESHBHAI | PATHAN NAHIDKHAN SAHIDKHAN 
 
 ### 🖼️ our model architecture
 ![Model Architecture](model_architecture.jpeg)
