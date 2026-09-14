@@ -49,9 +49,6 @@
 *Evaluates key soil parameters like pH, NPK levels, and moisture to recommend the most suitable crops tailored to local conditions.*
 
 
-
-
-
 ### 🗣️ Multilingual Chatbot for Farmers
 
 ![Multilingual Chatbot for Farmers](chatbot.png)
@@ -88,7 +85,7 @@
 
 - `Python`,`Nodejs`,`Expressjs`
 - `Flask` for API development
-- `Mongodb` for database interactions
+- `Mysql` for database interactions
 
 ### 🤖 Machine Learning & AI
 
@@ -149,7 +146,7 @@ Database (SQLAlchemy)
 
 ## 🔗 Useful Links
 
-- 🧠 **GitHub Repository:** [AgriSmart.Ai](https://github.com/Srinjoy2004/Hack4Bengal-VirtualHacks---AgriSmart.Ai)
+- 🧠 **GitHub Repository:** [AgriSmart.Ai](https://github.com/vishwam-doshi/SIH-TEAM-INNOVATRIX)
 - 📄 **Project Documentation:** [AgriSmart.Ai Docs](#) *(Link to be provided)*
 
 ---
@@ -166,14 +163,12 @@ Database (SQLAlchemy)
 ## 🤝 Team
 
 **Team Name:** AgriSmart.Ai  
-👨‍💻 **Team Lead:** Srinjoy Pramanik
-**Team Members :** Arpan Chowdhury I Syed Md.Musharraf I Subhabilas
+👨‍💻 **Team Lead:**Doshi Vishwam
+**Team Members :** Dharamraaj | SHAH TILAK JAYDEEPKUMAR | TIWARI AKASH SUNIL| PANDYA VED SHAILESHBHAI |  
 
 🏫 **Hackathon:** Hack4Bengal Virtual Hacks
 
----
 
-Feel free to customize this `README.md` further to align with your project's specifics. If you have images or diagrams of your machine learning models, you can include them in the respective sections using markdown syntax:
 
 ### 🖼️ our model architecture
 ![Model Architecture](model_architecture.jpeg)
