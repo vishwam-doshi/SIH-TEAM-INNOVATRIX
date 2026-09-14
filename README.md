@@ -3,11 +3,7 @@
 # 🌾 AgriSmart.Ai – Revolutionizing Agriculture with AI
 
 > **Empowering Farmers with AI-Driven Insights for Sustainable Farming**  
-> *Developed with passion for the Hack4Bengal Virtual Hacks.*
-
 ![image](agrismarthomepage.png)
-
-
 ## 🚀 Overview
 
 **AgriSmart.Ai** is an intelligent agricultural assistant designed to empower farmers and agricultural enthusiasts with data-driven insights. By leveraging AI-powered analytics and real-time data, it enhances agricultural productivity and efficiency.
