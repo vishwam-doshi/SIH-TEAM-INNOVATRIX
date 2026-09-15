@@ -79,7 +79,7 @@ Empowering Farmers with AI-Driven Insights for Sustainable Farming
 
 - `Python`,`Nodejs`,`Expressjs`
 - `Flask` for API development
-- `Mongodb` for database interactions
+- `MYSQL` for database interactions
 
 ### 🤖 Machine Learning & AI
 
