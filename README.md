@@ -67,7 +67,7 @@ Password for the static data Login = **Test@123**
 - 🧑‍💻 **Developers** interested in agricultural AI applications.
 
 ---
-[Download Project Documentation](Agrismart_AI_3_to_4_Page_No_Icons.docx)
+[Download Project Documentation](AgriSmart_AI_3_to_4_Page_No_Icons.docx)
 
 ## 🛠️ Tech Stack
 
