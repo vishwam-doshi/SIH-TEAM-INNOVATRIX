@@ -38,3 +38,15 @@ CREATE TABLE IF NOT EXISTS sessions (
   data        MEDIUMTEXT COLLATE utf8mb4_bin,
   PRIMARY KEY (session_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO users (id, name, email, phone, password, created_at, updated_at) VALUES
+(1, 'Rahul Sharma', 'rahul.sharma@example.com', '9000000001', '$2b$10$NfpIR2J0e2UI5VGcLKrMy.1TSGKdxVQEmjXVcwHIcQv...', '2026-09-14 17:50:34', '2026-09-14 17:50:34'),
+(2, 'Priya Patel', 'priya.patel@example.com', '9000000002', '$2b$10$NfpIR2J0e2UI5VGcLKrMy.1TSGKdxVQEmjXVcwHIcQv...', '2026-09-14 17:50:34', '2026-09-14 17:50:34'),
+(3, 'Arjun Mehta', 'arjun.mehta@example.com', '9000000003', '$2b$10$NfpIR2J0e2UI5VGcLKrMy.1TSGKdxVQEmjXVcwHIcQv...', '2026-09-14 17:50:34', '2026-09-14 17:50:34'),
+(4, 'Neha Shah', 'neha.shah@example.com', '9000000004', '$2b$10$NfpIR2J0e2UI5VGcLKrMy.1TSGKdxVQEmjXVcwHIcQv...', '2026-09-14 17:50:34', '2026-09-14 17:50:34'),
+(5, 'Rohan Das', 'rohan.das@example.com', '9000000005', '$2b$10$NfpIR2J0e2UI5VGcLKrMy.1TSGKdxVQEmjXVcwHIcQv...', '2026-09-14 17:50:34', '2026-09-14 17:50:34'),
+(6, 'Amit Verma', 'amit.verma@example.com', '9000000006', '$2b$10$NfpIR2J0e2UI5VGcLKrMy.1TSGKdxVQEmjXVcwHIcQv...', '2026-09-14 17:50:34', '2026-09-14 17:50:34'),
+(7, 'Sneha Joshi', 'sneha.joshi@example.com', '9000000007', '$2b$10$NfpIR2J0e2UI5VGcLKrMy.1TSGKdxVQEmjXVcwHIcQv...', '2026-09-14 17:50:34', '2026-09-14 17:50:34'),
+(8, 'Vikram Singh', 'vikram.singh@example.com', '9000000008', '$2b$10$NfpIR2J0e2UI5VGcLKrMy.1TSGKdxVQEmjXVcwHIcQv...', '2026-09-14 17:50:34', '2026-09-14 17:50:34'),
+(9, 'Ananya Rao', 'ananya.rao@example.com', '9000000009', '$2b$10$NfpIR2J0e2UI5VGcLKrMy.1TSGKdxVQEmjXVcwHIcQv...', '2026-09-14 17:50:34', '2026-09-14 17:50:34'),
+(10, 'Karan Gupta', 'karan.gupta@example.com', '9000000010', '$2b$10$NfpIR2J0e2UI5VGcLKrMy.1TSGKdxVQEmjXVcwHIcQv...', '2026-09-14 17:50:34', '2026-09-14 17:50:34');
